@@ -1,6 +1,5 @@
 public class Main {
-        public static void main(String[] args) {
-            new Converter();
+	public static void main(String[] args) {
+		new Converter();
 	}
-
  }
