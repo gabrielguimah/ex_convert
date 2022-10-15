@@ -2,12 +2,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-    public class Converter extends JFrame {
+    public class Convert extends JFrame {
         private JComboBox input, output;
         private JTextField infoBlocs[];
 
-        public Converter() {
-            setTitle("Temperature Converter");
+        public Convert() {
+            setTitle("Temperature Convert");
             setSize(250, 250);
             startFunc();
             setVisible(true);
@@ -18,7 +18,7 @@ import javax.swing.*;
             infoBlocs = new  JTextField[2];
             for(int i = 0; i < infoBlocs.length; i++){
                 infoBlocs[i] = new JTextField();
-                infoBlocs[i].setPreferredSize(new Dimension(100,50));
+                infoBlocs[i].setPreferredSize(new Dimension(45,45));
             }
             infoBlocs[1].setEditable(false);
             String temps[] = {"Celsius", "Fahrenheit", "Kelvin"};
@@ -26,7 +26,7 @@ import javax.swing.*;
             output = new JComboBox(temps);
             Container c = new Container();
             c.setLayout(new GridLayout(2, 2));
-            JButton conversor = new JButton("Ver temperatura");
+            JButton conversor = new JButton("See temperature");
             conversor.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent arg0) {
